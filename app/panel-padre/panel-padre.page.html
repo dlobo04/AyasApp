@@ -1,0 +1,130 @@
+    <!-- Menu -->
+    <ion-menu side="end" content-id="cPrincipal" menuId="menuPrincipal">
+      <ion-header>
+        <ion-toolbar translucent color="primary">
+          <ion-title>Opciones</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            <ion-icon name="home" slot="start"></ion-icon>
+            <ion-label>Inicio</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="person" slot="start"></ion-icon>
+            <ion-label>Mi Perfil</ion-label>
+          </ion-item>
+          <ion-item href="#!/disponibilidad">
+            <ion-icon name="calendar" slot="start"></ion-icon>
+            <ion-label>Disponibilidad</ion-label>
+          </ion-item>
+          <ion-item href="#!/cursos">
+            <ion-icon name="school" slot="start"></ion-icon>
+            <ion-label>Cursos</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="help-circle" slot="start"></ion-icon>
+            <ion-label>Tips</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="mail-unread" slot="start"></ion-icon>
+            <ion-label>Sugerencias</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="end">
+                <ion-button id="btnMenu" ng-click="openMenu()">
+                    <ion-icon slot="icon-only" name="menu"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Asistente Infantil</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content padding id="cPrincipal" class="textoCentrado">
+        
+        <img src="images/panelPadre.jpg" />
+        <ion-button fill="clear" expand="full" color="primary" size="medium" href="#!/buscarAI">
+          <ion-icon slot="start" name="search"></ion-icon>
+              Contratar Asistente Infantil
+        </ion-button>
+
+        <h2 class="textoTitulo">RESERVAS REALIZADAS</h2>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>05-07-2019 15:00</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="images/mark.jpg">
+              </ion-avatar>
+              <ion-label text-wrap>
+                <h3><strong>Solicitante:</strong> Mark Zuckerberg</h3>
+                <h3><strong>Direccion:</strong> Condominio Monteverde 204</h3>
+              </ion-label>
+            </ion-item>
+            <ion-button fill="clear" expand="full" color="primary" size="medium" href="#!/verDetalle">
+              <ion-icon slot="start" name="calendar"></ion-icon>
+              Ver detalles
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>06-07-2019 19:00</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="images/gal.jpg">
+              </ion-avatar>
+              <ion-label text-wrap>
+                <h3><strong>Solicitante:</strong> Gal Gadott</h3>
+                <h3><strong>Direccion:</strong> Av Santos Dumont 5to Anillo</h3>
+              </ion-label>
+            </ion-item>
+            <ion-button fill="clear" expand="full" color="primary" size="medium" href="#!/verDetalle">
+              <ion-icon slot="start" name="calendar"></ion-icon>
+              Ver detalles
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>12-07-2019 13:00</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="images/antonella.jpg">
+              </ion-avatar>
+              <ion-label text-wrap>
+                <h3><strong>Solicitante:</strong> Antonella Rocuso</h3>
+                <h3><strong>Direccion:</strong> Doble via a la Guardia</h3>
+              </ion-label>
+            </ion-item>
+            <ion-button fill="clear" expand="full" color="primary" size="medium" href="#!/verDetalle">
+              <ion-icon slot="start" name="calendar"></ion-icon>
+              Ver detalles
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+    </ion-content>
+
+    <ion-footer>
+      <ion-toolbar color="primary">
+        <ion-title>© Ayas Mitai - Asistentes Infantiles</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+
+<ion-menu-controller></ion-menu-controller>

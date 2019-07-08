@@ -1,0 +1,30 @@
+	<ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button id="btnMenu" (click)="volver()">
+                    <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Iniciar Sesion</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+	<ion-content padding class="centrar">
+		  <img src="/assets\logo.jpg">
+	    <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="form.txbUsuario">
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="form.txbPassword"></ion-input>
+        </ion-item>
+        <br />
+
+	    <ion-button color="primary" (click)="iniciarSesion()" size="medium">
+	    	<ion-icon slot="start" name="contact"></ion-icon>
+	    	Inicia Sesión
+	    </ion-button>
+	</ion-content>
